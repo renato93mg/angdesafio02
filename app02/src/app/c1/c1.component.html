@@ -1,0 +1,9 @@
+<p>Componente 01, {{nombre}}</p>
+<div [ngClass]="hayError ? 'exito' : 'error'" >Resultado obtenido</div>
+<ul>
+    <li *ngFor="let al of arreglo">
+        Id: {{al.id}}
+        Nombre: {{al.nombre | uppercase}}
+        Apellido: {{al.apellido | uppercase}}
+    </li>
+</ul>
